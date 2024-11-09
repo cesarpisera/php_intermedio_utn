@@ -1,0 +1,5 @@
+<div class='caja_comentarios'><h4> Nombre: </h4><h3><b>Cesar</b></h3>
+<h4>Apellido: </h4><h3><b>Pisera</b></h3>
+<p> <u>Comentario:</u> Soy un gran admirador de la serie animada ONE PIECE.</p>
+<br><h5>Comentario enviado el: sábado, 9 de noviembre de 2024, 11:04</h5>
+<br> </div>

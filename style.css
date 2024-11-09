@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(one-piece-minimal-wallpapers.png);
+    color: #412a1e; /* Color de texto principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #105edd; /* Fondo azul intenso */
+    color: #fefefe; /* Texto en blanco */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1, header h2 {
+    margin: 10px 0;
+}
+
+.titulo {
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.menu_principal {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu_principal li a {
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.menu_principal li a:hover {
+    background-color: #0b3075; /* Cambio de color al pasar el mouse */
+}
+
+/* Sección contenedor cargar */
+.contenedor_cargar {
+    max-width: 500px;
+    width: 100%;
+    background-color: #f8de3c; /* Fondo amarillo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenedor_cargar h3 {
+    color: #412a1e;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Formulario de carga de personajes */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario input[type="submit"] {
+    padding: 10px;
+    border: 2px solid #c8472c; /* Borde color rojo */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formulario input[type="text"]:focus,
+.formulario textarea:focus {
+    border-color: #412a1e; /* Color de borde al enfocar */
+}
+
+.formulario input[type="submit"] {
+    background-color: #58acf4; /* Azul claro */
+    color: #fefefe;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0b3075; /* Azul oscuro */
+}
+
+/* Mensaje de éxito */
+.contenedor_cargar h3 + h3 {
+    color: #105edd;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Contenedor general de personajes */
+.contenedor_personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta de personaje */
+.caja_personajes {
+    width: 250px;
+    background-color: #f8de3c; /* Fondo amarillo claro */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.caja_personajes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de la tarjeta */
+.caja_personajes img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #c8472c; /* Borde rojo debajo de la imagen */
+}
+
+/* Contenido de la tarjeta */
+.caja_personajes h2 {
+    font-size: 1.4em;
+    margin: 15px 0 10px;
+    color: #c8472c; /* Rojo para el nombre */
+}
+
+.caja_personajes p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #412a1e;
+    padding: 0 10px 15px;
+}
+
+/* Contenedor comentarios */
+.contenedor_comentarios {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor_cargar_comentario {
+    max-width: 500px;
+    width: 100%;
+    background-color: #f8de3c; /* Fondo amarillo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+}
+
+.contenedor_cargar_comentario h3 {
+    color: #412a1e;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.caja_comentarios {
+    width: 250px;
+    background-color: #fefefe; /* Fondo amarillo claro */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.caja_comentarios:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
