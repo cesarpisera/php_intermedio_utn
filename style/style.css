@@ -6,8 +6,8 @@
 }
 
 body {
-    background-image: url(one-piece-minimal-wallpapers.png);
-    color: #412a1e; /* Color de texto principal */
+    background-image: url("one-piece-minimal-wallpapers.png");
+    color: #412a1e; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,8 +19,8 @@ header {
     text-align: center;
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #105edd; /* Fondo azul intenso */
-    color: #fefefe; /* Texto en blanco */
+    background-color: #105edd; 
+    color: #fefefe; 
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -53,14 +53,14 @@ nav {
 }
 
 .menu_principal li a:hover {
-    background-color: #0b3075; /* Cambio de color al pasar el mouse */
+    background-color: #0b3075; 
 }
 
 /* Sección contenedor cargar */
 .contenedor_cargar {
     max-width: 500px;
     width: 100%;
-    background-color: #f8de3c; /* Fondo amarillo claro */
+    background-color: #f8de3c; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@ nav {
 .contenedor_ingreso {
     max-width: 500px;
     width: 100%;
-    background-color: #f8de3c; /* Fondo amarillo claro */
+    background-color: #f8de3c; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ nav {
 .formulario textarea,
 .formulario input[type="submit"] {
     padding: 10px;
-    border: 2px solid #c8472c; /* Borde color rojo */
+    border: 2px solid #c8472c; 
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
@@ -119,11 +119,11 @@ nav {
 
 .formulario input[type="text"]:focus,
 .formulario textarea:focus {
-    border-color: #412a1e; /* Color de borde al enfocar */
+    border-color: #412a1e; 
 }
 
 .formulario input[type="submit"] {
-    background-color: #58acf4; /* Azul claro */
+    background-color: #58acf4; 
     color: #fefefe;
     font-weight: bold;
     cursor: pointer;
@@ -131,7 +131,7 @@ nav {
 }
 
 .formulario input[type="submit"]:hover {
-    background-color: #0b3075; /* Azul oscuro */
+    background-color: #0b3075; 
 }
 
 /* Mensaje de éxito */
@@ -153,7 +153,7 @@ nav {
 /* Estilo para cada tarjeta de personaje */
 .caja_personajes {
     width: 250px;
-    background-color: #f8de3c; /* Fondo amarillo claro */
+    background-color: #f8de3c; 
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -171,14 +171,14 @@ nav {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #c8472c; /* Borde rojo debajo de la imagen */
+    border-bottom: 2px solid #c8472c; 
 }
 
 /* Contenido de la tarjeta */
 .caja_personajes h2 {
     font-size: 1.4em;
     margin: 15px 0 10px;
-    color: #c8472c; /* Rojo para el nombre */
+    color: #c8472c;
 }
 
 .caja_personajes p {
@@ -199,7 +199,7 @@ nav {
 .contenedor_cargar_comentario {
     max-width: 500px;
     width: 100%;
-    background-color: #f8de3c; /* Fondo amarillo claro */
+    background-color: #f8de3c; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -215,7 +215,7 @@ nav {
 
 .caja_comentarios {
     width: 250px;
-    background-color: #fefefe; /* Fondo amarillo claro */
+    background-color: #fefefe; 
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
