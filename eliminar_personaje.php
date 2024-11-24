@@ -1,10 +1,22 @@
 <?php
+
+session_start();
+
+//Verificar si hay un mensaje y mostrarlo
+
+if (!isset($_SESSION['admin'])) {
+    $_SESSION['mensaje'] = '<p class="necesario_iniciar">Es necesario iniciar sesión para acceder a esta funcionalidad</p>';
+    header("Location:index.php");
+    exit();
+}
+
+
 include("conexion.php");
 $id_personaje = $_GET['id'];
 
 
 
-mysqli_query($conexion_db, "DELETE FROM personajes_onepiece WHERE id=$id_personaje");
+mysqli_query($conexion_db, "DELETE FROM personajes_onepiece2 WHERE id=$id_personaje");
 
 
 

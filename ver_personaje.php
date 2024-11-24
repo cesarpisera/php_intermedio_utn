@@ -7,7 +7,7 @@ include('header.php');
         <?php
         include("conexion.php");
 
-        $consulta_db = mysqli_query($conexion_db, "SELECT * FROM personajes_onepiece");
+        $consulta_db = mysqli_query($conexion_db, "SELECT * FROM personajes_onepiece2");
         while ($mostrar_datos = mysqli_fetch_assoc($consulta_db)) {
         ?>
             <div class="caja_personajes">

@@ -14,9 +14,11 @@
         <h2 class="titulo">¿Los conoces?</h2>
         <nav>
             <ul class="menu_principal">
-                <li><a href="index.php">Carga de personaje</a></li>
+                <li><a href="index.php">Iniciar sesión</a></li>
+                <li><a href="cargar.php">Carga de personaje</a></li>
                 <li><a href="ver_personaje.php">Ver personajes</a></li>
                 <li><a href="comentarios.php">Comentarios</a></li>
+                <li><a href="salir.php">Cerrar sesión</a></li>
             </ul>
             <br>
             <h4>
