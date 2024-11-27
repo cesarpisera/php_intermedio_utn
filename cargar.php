@@ -31,7 +31,7 @@ if (isset($_SESSION['admin'])) {
             <div class="img_container">
             <img src="captcha.php" alt="captcha" class="img_captcha">
             </div>
-            <input type="text" name="captcha" id="Ingresar captcha">
+            <input type="text" name="captcha" id="Ingresar captcha" placeholder="Ingresar captcha">
             <input type="submit" value="Cargar Personajes">
         </form>
 
