@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+
+$codigo_captcha = $_POST['captcha'];
+
+if($codigo_captcha == $_SESSION['codigo_captcha']) {
+
 include("conexion.php");
 
 $nombre_per = $_POST['nombre'];
@@ -11,4 +18,8 @@ mysqli_query($conexion_db, "INSERT INTO personajes_onepiece2 VALUES(DEFAULT, '$n
 
 mysqli_close($conexion_db);
 
-header("Location:index.php?ok");
+header("Location:cargar.php?ok");
+
+} else {
+    header("Location:cargar.php?error_codigo");
+}

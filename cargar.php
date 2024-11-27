@@ -2,14 +2,24 @@
 session_start();
 
 //verificar si el usuario ha iniciado sesion
-if (!isset($_SESSION['admin'])) {
-    header("Location:index.php");
-    exit();
-};
+if (isset($_SESSION['admin'])) {
 
-include('header.php');
+    include('header.php');
+
+    // Codigo captcha
+
+    $nro1 = rand(0, 9);
+    $nro2 = rand(0, 9);
+    $nro3 = rand(0, 9);
+    $letra = array("A", "B", "C", "E", "X", "Y", "Z");
+    $simbolo = array("$", "@", "/", "#", "=");
+    $mezcla_letra = rand(0, 6);
+    $mezcla_simbolo = rand(0, 4);
+
+    $_SESSION['codigo_captcha'] = $nro1 . $letra[$mezcla_letra] . $nro2 . $simbolo[$mezcla_simbolo] . $nro3;
+
 ?>
-<h2>Bienvenido <?php echo $_SESSION['admin']; ?></h2>
+    <h2>Bienvenido <?php echo $_SESSION['admin']; ?></h2>
 
     <section class="contenedor_cargar">
         <h3>Cargar Personajes</h3>
@@ -18,15 +28,27 @@ include('header.php');
             <input type="text" name="apellido" placeholder="Apellido">
             <input type="text" name="imagen" placeholder="Imagen">
             <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Describe al personaje"></textarea>
+            <div class="img_container">
+            <img src="captcha.php" alt="captcha" class="img_captcha">
+            </div>
+            <input type="text" name="captcha" id="Ingresar captcha">
             <input type="submit" value="Cargar Personajes">
         </form>
 
-        <?php
-        if (isset($_GET['ok'])) {
-            echo "<h3> Personaje cargado con éxito</h3>";
-        }
-        ?>
     </section>
+
+<?php
+    if (isset($_GET['error_codigo'])) {
+        echo "<h3> Código de verificación incorrecto</h3>";
+    }
+    if (isset($_GET['ok'])) {
+        echo "<h3> Personaje cargado con éxito</h3>";
+    }
+} else {
+    header("Location:index.php");
+}
+
+?>
 
 </body>
 
