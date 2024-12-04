@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1 class="titulo">Los Piratas de Sombrero de Paja</h1>
-        <h2 class="titulo">¿Los conoces?</h2>
+        <h2 class="titulo">ONE PIECE</h2>
         <nav>
             <ul class="menu_principal">
             <?php
