@@ -18,7 +18,9 @@ include('header.php');
                 </h2>
                 <img src="imagenes/<?php echo $mostrar_datos['imagen'] ?>" alt="<?php echo $mostrar_datos['nombre'] ?>">
                 <p><?php echo $mostrar_datos['descripcion']; ?></p>
+                <p><?php echo $mostrar_datos['tipo']; ?></p>
                 <a href="eliminar_personaje.php?id=<?php echo $mostrar_datos['id'] ?>">Eliminar personaje</a>
+                <a href="editar_personaje.php?id=<?php echo $mostrar_datos['id'] ?>">Chequear</a>
             </div>
 
         <?php }    ?>
