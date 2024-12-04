@@ -1,7 +1,6 @@
 <?php
 include('header.php');
 
-session_start();
 
 //Verificar si hay un mensaje y mostrarlo
 

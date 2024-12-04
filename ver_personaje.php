@@ -1,5 +1,10 @@
 <?php
-include('header.php');
+session_start();
+
+//verificar si el usuario ha iniciado sesion
+if (isset($_SESSION['admin'])) {
+
+    include('header.php');
 ?>
 
     <section class="contenedor_personajes">
@@ -23,7 +28,7 @@ include('header.php');
                 <a href="editar_personaje.php?id=<?php echo $mostrar_datos['id'] ?>">Chequear</a>
             </div>
 
-        <?php }    ?>
+        <?php }   } ?>
 
     </section>
 

@@ -1,5 +1,10 @@
 <?php
-include('header.php');
+session_start();
+
+//verificar si el usuario ha iniciado sesion
+if (isset($_SESSION['admin'])) {
+
+    include('header.php');
 ?>
 <section class="contenedor_comentarios">
 <article class="contenedor_cargar_comentario">
@@ -24,7 +29,7 @@ include('header.php');
     $cantidadLineas = count($lineas);
 
     fclose($archivo);
-    ?>
+}?>
 </article>
 </section>
 </body>
